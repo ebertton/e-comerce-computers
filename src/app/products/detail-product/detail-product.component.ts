@@ -27,6 +27,7 @@ export class DetailProductComponent {
     const routeParams = this.route.snapshot.paramMap;
     const productId = Number(routeParams.get("id"));
     this.product = this.productService.getOne(productId);
+   
   }
 
   addToCart(){
